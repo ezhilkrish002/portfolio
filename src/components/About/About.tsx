@@ -17,8 +17,9 @@ import reactIcon from "../../assets/react-icon.svg";
 import mysql from "../../assets/mysql-icon.svg";
 import tailwindcss from "../../assets/tailwind.jpg";
 import next from "../../assets/nextjs.jpg";
-import ScrollAnimation from "react-animate-on-scroll";
 import vscodeicon from "../../assets/vscode-icon.svg" ;
+
+import ScrollAnimation from 'react-animate-on-scroll';
 
 
 export function About() {
