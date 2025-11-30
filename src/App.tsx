@@ -12,7 +12,7 @@ function App() {
       <GlobalStyle></GlobalStyle>
       <Header></Header>
       <Main></Main>
-      <Analytics />
+      {/* <Analytics /> */}
       <Footer></Footer>
     </>
   )
