@@ -4,59 +4,70 @@ import { NavHashLink, HashLink } from 'react-router-hash-link'
 import { useState } from 'react'
 import krish from "../../assets/kimg.png"
 import Resume from '../../assets/Krishnamoorthi_Frontend_developer.pdf'
+
 export function Header() {
   const [isActive, setActive] = useState(false)
+
   function toggleTheme() {
-    let html = document.getElementsByTagName('html')[0]
-    html.classList.toggle('light')
+    document.documentElement.classList.toggle('light')
   }
+
   function closeMenu() {
     setActive(false)
   }
+
   return (
     <Container className="header-fixed">
       <Router>
-       <HashLink smooth to="#home" className="logo">
-  <span className="logo-img">
-    <img src={krish} alt="Krishnamoorthi" />
-  </span>
-  <span className="logo-text">{"<KrishnaMoorthi/> "}</span>
-</HashLink>
+        
+        {/* LOGO */}
+        <HashLink smooth to="#home" className="logo">
+          <span className="logo-img">
+            <img src={krish} alt="Krishnamoorthi" />
+          </span>
+          <span className="logo-text">{"<KrishnaMoorthi/> "}</span>
+        </HashLink>
 
-        <input
-          onChange={toggleTheme}
-          className="container_toggle"
-          type="checkbox"
-          id="switch"
-          name="mode"
-        />
-        <label htmlFor="switch">Toggle</label>
+        {/* DESKTOP TOGGLE ONLY */}
+        <div className="toggle-desktop">
+          <input
+            onChange={toggleTheme}
+            className="container_toggle"
+            type="checkbox"
+            id="switch"
+          />
+          <label htmlFor="switch">Toggle</label>
+        </div>
+
+        {/* NAVIGATION */}
         <nav className={isActive ? 'active' : ''}>
-          <NavHashLink smooth to="#home" onClick={closeMenu}>
-            Home
-          </NavHashLink>
-          <NavHashLink smooth to="#about" onClick={closeMenu}>
-            About me
-          </NavHashLink>
-          <NavHashLink smooth to="#project" onClick={closeMenu}>
-            Project
-          </NavHashLink>
-          <NavHashLink smooth to="#contact" onClick={closeMenu}>
-            Contact
-          </NavHashLink>
-          <a href={Resume} download className="button">
-            Resume
-          </a>
+          <NavHashLink smooth to="#home" onClick={closeMenu}>Home</NavHashLink>
+          <NavHashLink smooth to="#about" onClick={closeMenu}>About me</NavHashLink>
+          <NavHashLink smooth to="#project" onClick={closeMenu}>Project</NavHashLink>
+          <NavHashLink smooth to="#contact" onClick={closeMenu}>Contact</NavHashLink>
+          <a href={Resume} download className="button">Resume</a>
+
+          {/* MOBILE TOGGLE INSIDE MENU */}
+          <div className="toggle-mobile">
+            <input
+              onChange={toggleTheme}
+              className="container_toggle"
+              type="checkbox"
+              id="switch-mobile"
+            />
+            <label htmlFor="switch-mobile">Toggle</label>
+          </div>
         </nav>
+
+        {/* HAMBURGER ICON */}
         <div
           aria-expanded={isActive ? 'true' : 'false'}
           aria-haspopup="true"
-          aria-label={isActive ? 'Fechar menu' : 'Abrir menu'}
+          aria-label={isActive ? 'Close menu' : 'Open menu'}
           className={isActive ? 'menu active' : 'menu'}
-          onClick={() => {
-            setActive(!isActive)
-          }}
+          onClick={() => setActive(!isActive)}
         ></div>
+
       </Router>
     </Container>
   )

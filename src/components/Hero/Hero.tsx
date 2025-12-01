@@ -19,21 +19,30 @@ export function Hero() {
   return (
     <Container id="home">
       <div className="hero-text">
-        <p data-aos="fade-up">Hello <img src={Hello} alt="Hello" width="20px" />, I'm</p>
+        <p data-aos="fade-up">
+          Hello <img src={Hello} alt="Hello" width="20px" />, I'm
+        </p>
+
         <h1 data-aos="fade-up" data-aos-delay="200">Krishnamoorthi</h1>
+
         <h3 data-aos="fade-up" data-aos-delay="400">Frontend Developer</h3>
-        <p className="small-resume" data-aos="fade-up" data-aos-delay="600">Fresher</p>
+
+        <p className="small-resume" data-aos="fade-up" data-aos-delay="600">
+          Fresher
+        </p>
+
         <BrowserRouter>
-          <NavHashLink 
-            smooth 
-            to="#contact" 
+          <NavHashLink
+            smooth
+            to="#contact"
             className="button"
-            data-aos="fade-up" 
+            data-aos="fade-up"
             data-aos-delay="800"
           >
             Contact
           </NavHashLink>
         </BrowserRouter>
+
         <div className="social-media" data-aos="fade-up" data-aos-delay="1000">
           <a href="https://www.linkedin.com/in/krishnamoorthi-t" target="_blank" rel="noreferrer">
             <img src={linkedin} alt="Linkedin" />
@@ -50,6 +59,7 @@ export function Hero() {
           </a>
         </div>
       </div>
+
       <div className="hero-image">
         <img src={Illustration} alt="Illustration" data-aos="fade-right" data-aos-delay="1000" />
       </div>

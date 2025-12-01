@@ -13,17 +13,17 @@ const projects = [
     description:
       "The E-Commerce Website frontend is developed using Next.js, providing a fast, responsive, and seamless shopping experience…",
     tech: ["Next.js", "Tailwindcss", "Redux"],
-    github: "https://github.com/CodeVinayak/MultilingualVQA",
-    live: null,
+    github: "https://github.com/ezhilkrish002/ecom",
+    live: "ecom-ecru-ten.vercel.app",
   },
-  {
-    title: "Online Medical Products Supply",
+ {
+    title: "Restaurant Billing System",
     description:
-      "Developed a secure medical products supply platform with CRUD functionality…",
-    tech: ["PHP", "HTML", "CSS", "MySQL"],
+      "The Restaurant Billing System is a web-based application built using HTML, CSS, PHP…",
+    tech: ["HTML", "CSS", "PHP"],
     github:
-      "https://github.com/CodeVinayak/MediBook-Medical-Appointment-Scheduler-with-Health-History",
-    live: "https://medibook.vinayaksingh.com",
+      "https://github.com/ezhilkrish002/bill",
+    live: null,
   },
   {
     title: "Virtual Mouse Using Machine Learning",
@@ -31,16 +31,16 @@ const projects = [
       "A system that performs mouse functions through real-time hand gestures…",
     tech: ["OpenCV", "MediaPipe", "scikit-learn"],
     github:
-      "https://github.com/CodeVinayak/Real-Time-Hand-Gesture-Driven-3D-Object-Manipulation",
-    live: "https://youtu.be/NOm-3MynPLE",
+      "https://github.com/ezhilkrish002",
+    live: null,
   },
-  {
-    title: "Restaurant Billing System",
+    {
+    title: "Online Medical Products Supply",
     description:
-      "The Restaurant Billing System is a web-based application built using HTML, CSS, PHP…",
-    tech: ["HTML", "CSS", "PHP"],
+      "Developed a secure medical products supply platform with CRUD functionality…",
+    tech: ["PHP", "HTML", "CSS", "MySQL"],
     github:
-      "https://github.com/CodeVinayak/Jupyter-Notebook/tree/main/Credit%20Risk%20Analysis",
+      "https://github.com/ezhilkrish002",
     live: null,
   },
 ];

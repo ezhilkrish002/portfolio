@@ -9,11 +9,13 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import 'react-toastify/dist/ReactToastify.css';
 
+import { Analytics } from '@vercel/analytics/react';
+
 function App() {
   useEffect(() => {
     AOS.init({
       duration: 1000,
-      once: true, // animations happen only once
+      once: true,
     });
   }, []);
 
@@ -23,6 +25,9 @@ function App() {
       <Header />
       <Main />
       <Footer />
+
+      {/* Vercel Analytics */}
+      <Analytics />
     </>
   );
 }
