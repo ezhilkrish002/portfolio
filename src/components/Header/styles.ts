@@ -145,13 +145,13 @@ export const Container = styled.header`
     transform: translateX(-100%);
   }
 
-  /* DESKTOP TOGGLE WRAPPER */
+  /* -------- DESKTOP TOGGLE WRAPPER -------- */
   .toggle-desktop {
     display: flex;
     align-items: center;
   }
 
-  /* MOBILE TOGGLE (hidden by default) */
+  /* -------- MOBILE TOGGLE (hidden until mobile) -------- */
   .toggle-mobile {
     display: none;
   }
@@ -165,7 +165,7 @@ export const Container = styled.header`
       display: block;
     }
 
-    /* --------- MOBILE: NAV MENU --------- */
+    /* --------- MOBILE NAV MENU --------- */
     nav {
       opacity: 0;
       visibility: hidden;
@@ -179,37 +179,45 @@ export const Container = styled.header`
       left: 0;
       transition: opacity 0.25s;
       background-color: var(--green);
-      gap: 2rem;
-
-      a.button {
-        background-color: var(--pink);
-      }
-
-      &.active {
-        opacity: 1;
-        visibility: visible;
-      }
+      gap: 2.5rem;
     }
 
-    /* -------- MOBILE LOGO BEHAVIOR -------- */
+    nav.active {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    /* Hide name — show only image */
     .logo-text {
-      display: none; /* hide name */
+      display: none;
     }
 
     .logo-img {
-      display: block; /* show image */
+      display: block;
     }
 
-    /* ------- TOGGLES -------- */
+    /* Resume button centered nicely */
+    nav .button {
+      display: inline-block;
+      font-size: 1.6rem;
+      background-color: var(--pink);
+      padding: 0.8rem 2.4rem;
+      border-radius: 4px;
+      text-align: center;
+      margin-top: 1rem;
+    }
+
+    /* Hide desktop toggle in mobile */
     .toggle-desktop {
-      display: none; /* hide desktop toggle */
+      display: none;
     }
 
+    /* Show toggle inside menu */
     nav .toggle-mobile {
-      display: flex; /* show mobile toggle inside menu */
-      margin-top: 2rem;
+      display: flex;
       flex-direction: column;
       align-items: center;
+      margin-top: 2rem;
     }
   }
 `;

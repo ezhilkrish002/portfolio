@@ -28,7 +28,7 @@ export function Header() {
           <span className="logo-text">{"<KrishnaMoorthi/> "}</span>
         </HashLink>
 
-        {/* DESKTOP TOGGLE ONLY */}
+        {/* DESKTOP THEME TOGGLE */}
         <div className="toggle-desktop">
           <input
             onChange={toggleTheme}
@@ -45,9 +45,11 @@ export function Header() {
           <NavHashLink smooth to="#about" onClick={closeMenu}>About me</NavHashLink>
           <NavHashLink smooth to="#project" onClick={closeMenu}>Project</NavHashLink>
           <NavHashLink smooth to="#contact" onClick={closeMenu}>Contact</NavHashLink>
+
+          {/* Resume button - visible on all devices */}
           <a href={Resume} download className="button">Resume</a>
 
-          {/* MOBILE TOGGLE INSIDE MENU */}
+          {/* MOBILE THEME TOGGLE INSIDE MENU */}
           <div className="toggle-mobile">
             <input
               onChange={toggleTheme}
@@ -59,7 +61,7 @@ export function Header() {
           </div>
         </nav>
 
-        {/* HAMBURGER ICON */}
+        {/* HAMBURGER BUTTON */}
         <div
           aria-expanded={isActive ? 'true' : 'false'}
           aria-haspopup="true"
