@@ -3,7 +3,6 @@ import { BrowserRouter as Router } from 'react-router-dom'
 import { NavHashLink, HashLink } from 'react-router-hash-link'
 import { useState } from 'react'
 import krish from "../../assets/kimg.png"
-import Resume from '../../assets/krishnamoorthi_frontend_developer.pdf'
 
 export function Header() {
   const [isActive, setActive] = useState(false)
@@ -46,8 +45,10 @@ export function Header() {
           <NavHashLink smooth to="#project" onClick={closeMenu}>Project</NavHashLink>
           <NavHashLink smooth to="#contact" onClick={closeMenu}>Contact</NavHashLink>
 
-          {/* Resume button - visible on all devices */}
-          <a href={Resume} download className="button">Resume</a>
+            {/* Resume button - visible on all devices
+              Uses public path so builds won't fail if the asset isn't imported/bundled.
+              Place `krishnamoorthi_frontend_developer.pdf` in the `public/` folder. */}
+            <a href="/krishnamoorthi_frontend_developer.pdf" download className="button">Resume</a>
 
           {/* MOBILE THEME TOGGLE INSIDE MENU */}
           <div className="toggle-mobile">
