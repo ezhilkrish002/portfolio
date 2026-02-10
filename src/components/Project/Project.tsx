@@ -9,35 +9,52 @@ import externalLink from "../../assets/external-link.svg";
 // List of projects (can also come from props or API)
 const projects = [
   {
-    title: "E-Commerce Website in Next.js",
+    title: "Next.js E-Commerce Web Application ",
     description:
-      "The E-Commerce Website frontend is developed using Next.js, providing a fast, responsive, and seamless shopping experience…",
-    tech: ["Next.js", "Tailwindcss", "Redux"],
+      "Developed a responsive e-commerce web application using Next.js with Redux Toolkit for global state management and Tailwind CSS for modern UI styling, implementing centralized state management for product listings, cart data, and user interactions. Integrated REST APIs to fetch and handle dynamic product data, and incorporated the WhatsApp API to automatically send product and user details to the admin when users initiate a purchase, enabling real-time order communication. Optimized UI performance and ensured responsive design across mobile and desktop devices using component-based architecture and clean code practices to deliver a seamless and maintainable user experience.",
+    tech: ["Next.js", "Tailwindcss", "Redux" , "Whatsapp API integration"],
     github: "https://github.com/ezhilkrish002/ecom",
-    live: "ecom-ecru-ten.vercel.app",
+    live: "https://ecom-ecru-ten.vercel.app/",
+  },
+  {
+    title: "E-Commerce Website in React.js",
+    description:"Designed and developed a responsive e-commerce web application using React.js with Redux Toolkit for global state management Implemented product listing, category filtering, and cart functionality using centralized Redux store Managed application state efficiently across components using slices, actions, and reducers Integrated REST APIs to fetch and display dynamic product data Built reusable and modular React components to improve maintainability and scalability Optimized UI performance and ensured seamless responsiveness across mobile and desktop devices Followed clean code practices and component-based architecture for better user experience.",
+    tech: ["React.js", "Tailwindcss", "Redux", "REST API"],
+    github: "https://github.com/ezhilkrish002/E-commerce",
+    live: "https://ecom-ecru-ten.vercel.app/",
+  },
+    {
+    title: "Virtual Mouse Using Machine Learning",
+    description:
+      "Developed a virtual mouse application that enables cursor control and mouse functions without a physical mouse using hand gesture recognition. Utilized MediaPipe for real-time hand tracking and OpenCV for gesture detection to map hand movements to mouse actions, and implemented machine learning algorithms to accurately recognize gestures and translate them into mouse events such as click, scroll, and drag. Optimized real-time performance to ensure smooth, responsive, and intuitive hands-free computer interaction while maintaining a high-quality user experience.",
+    tech: ["Python", "OpenCV", "MediaPipe", "Machine Learning"],
+    github:
+      "https://github.com/ezhilkrish002/virtual_mouse",
+    live: null,
+  },
+   {
+    title: "A Portfolio using React",
+    description:
+      "A web-based platform that enables users to browse, order, and receive medical supplies from registered suppliers, improving accessibility to essential healthcare products. Implemented responsive UI design and intuitive navigation to enhance user experience across devices. Integrated product search, category filtering, and order management features to streamline the purchasing process, while following modular and clean code practices to ensure maintainability and scalability of the application.",
+    tech: ["React.js", "Tailwindcss","TypeScript"],
+    github:
+      "https://github.com/ezhilkrish002/portfolio",
+    live: "https://krishportfolio-seven.vercel.app/",
   },
  {
     title: "Restaurant Billing System",
     description:
-      "The Restaurant Billing System is a web-based application built using HTML, CSS, PHP…",
-    tech: ["HTML", "CSS", "PHP"],
+      "Restaurant Billing System that automates order entry, billing, and receipt generation, improving accuracy and efficiency in a restaurant’s daily operations. Implemented a user‑friendly interface for selecting menu items, calculating totals with taxes, and applying discounts, ensuring seamless and error‑free bill creation. Integrated functionality to store transaction details and generate printable receipts for customers, enhancing the billing workflow. Followed modular design and clean coding practices to maintain scalability and ease of maintenance.",
+    tech: ["HTML", "CSS", "PHP", "MySQL"],
     github:
       "https://github.com/ezhilkrish002/bill",
     live: null,
   },
-  {
-    title: "Virtual Mouse Using Machine Learning",
-    description:
-      "A system that performs mouse functions through real-time hand gestures…",
-    tech: ["OpenCV", "MediaPipe", "scikit-learn"],
-    github:
-      "https://github.com/ezhilkrish002",
-    live: null,
-  },
+
     {
     title: "Online Medical Products Supply",
     description:
-      "Developed a secure medical products supply platform with CRUD functionality…",
+      "A web-based platform that enables users to browse, order, and receive medical supplies from registered suppliers, improving accessibility to essential healthcare products. Implemented responsive UI design and intuitive navigation to enhance user experience across devices. Integrated product search, category filtering, and order management features to streamline the purchasing process, while following modular and clean code practices to ensure maintainability and scalability of the application.",
     tech: ["PHP", "HTML", "CSS", "MySQL"],
     github:
       "https://github.com/ezhilkrish002",
