@@ -10,7 +10,7 @@ export function Footer() {
   return (
     <Container className="footer">
       <a href="https://krishportfolio-seven.vercel.app/" className="logo">
-        <span>www.krishnamoorthi_t.in</span>
+        <span>www.krishnamoorthi.in</span>
         {/* <span>singh.in</span> */}
       </a>
       <div>
