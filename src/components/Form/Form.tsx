@@ -1,14 +1,12 @@
 import { Container, ContainerSucces } from './styles'
 import { useForm, ValidationError } from '@formspree/react'
 import { toast, ToastContainer } from 'react-toastify'
-import ReCAPTCHA from 'react-google-recaptcha'
 import { useEffect, useState } from 'react'
 import validator from 'validator'
 
 export function Form() {
   const [state, handleSubmit] = useForm('xknkpqry')
   const [validEmail, setValidEmail] = useState(false)
-  const [isHuman, setIsHuman] = useState(false)
   const [message, setMessage] = useState('')
 
   // Validate email
@@ -27,7 +25,7 @@ export function Form() {
         toastId: 'succeeded',
       })
     }
-  }, [state.succeeded]) // 👈 prevents infinite loop
+  }, [state.succeeded])
 
   // Success page
   if (state.succeeded) {
@@ -70,22 +68,18 @@ export function Form() {
           name="message"
           onChange={(e) => setMessage(e.target.value)}
         />
-        <ValidationError prefix="Message" field="message" errors={state.errors} />
-
-        {/* RECAPTCHA FIXED — token returned, not event */}
-        <ReCAPTCHA
-          sitekey="6Lfj9NYfAAAAAP8wPLtzrsSZeACIcGgwuEIRvbSg"
-          onChange={(token: string | null) => {
-            setIsHuman(!!token) // true only if token exists
-          }}
+        <ValidationError
+          prefix="Message"
+          field="message"
+          errors={state.errors}
         />
 
         {/* SUBMIT BUTTON */}
         <button
           type="submit"
-          disabled={state.submitting || !validEmail || !message || !isHuman}
+          disabled={state.submitting || !validEmail || !message}
         >
-          Submit
+          {state.submitting ? 'Sending...' : 'Submit'}
         </button>
       </form>
 
