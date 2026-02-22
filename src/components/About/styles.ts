@@ -64,11 +64,11 @@ export const Container = styled.section`
   .about-image::before {
     content: "";
     position: absolute;
-    top: 25%;
+    top: 28%;
     left: 50%;
     transform: translate(-50%, -20%);
-    width: 40rem;
-    height: 40rem;
+    width: 36rem;
+    height: 36rem;
     background: yellow;
     border-radius: 50%;
     opacity: 0.7;
@@ -79,8 +79,10 @@ export const Container = styled.section`
 
   /* Main image - DESKTOP ONLY (reduced size) */
   .about-image img {
-    margin-top: 10rem;
-    width: 50%;        /* 🔥 reduced from 65% → 50% */
+    margin-top: 6rem;
+    width: 50%;        /* keeps layout proportion */
+    max-height: 520px; /* cap height so image isn't too tall on large screens */
+    height: auto;      /* maintain aspect ratio */
     border-radius: 50%;
     padding: 1rem;
     background: yellow;
@@ -107,7 +109,7 @@ export const Container = styled.section`
 
     .about-image::before {
       width: 28rem;
-      height: 28rem;
+      height: 20rem;
       filter: blur(35px);
       top: 20%;
     }

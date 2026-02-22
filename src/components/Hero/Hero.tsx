@@ -10,6 +10,7 @@ import linkedin from "../../assets/linkedin.svg";
 import githubIcon from "../../assets/github.svg";
 import whatsapp from "../../assets/whatsapp.svg";
 import Hello from "../../assets/Hello.gif";
+import email from "../../assets/Email.png"
 
 export function Hero() {
   useEffect(() => {
@@ -56,6 +57,9 @@ export function Hero() {
             rel="noreferrer"
           >
             <img src={whatsapp} alt="Whatsapp" />
+          </a>
+          <a href="mailto:krishnamoorthit07@gmail.com" rel="noreferrer">
+            <img src={email} alt="Email" />
           </a>
         </div>
       </div>
