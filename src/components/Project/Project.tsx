@@ -17,6 +17,14 @@ const projects = [
     live: "https://ecom-ecru-ten.vercel.app/",
   },
   {
+    title: "StockSense – Smart Inventory & Stock Alert System ",
+    description:
+      "StockSense is a warehouse inventory management dashboard built for tracking products, monitoring stock levels, and alerting when stock falls below defined thresholds. It simulates a real-world inventory system with role-based access, real-time updates, and offline support — all running entirely on the frontend with mocked API responses.",
+    tech: ["React.js","React Router v6",  "Redux Toolkit" , "Tailwindcss", ],
+    github: "https://github.com/ezhilkrish002/Inventory",
+    live: "https://smart-inventory-dashboard-ten.vercel.app/",
+  },
+  {
     title: "E-Commerce Website in React.js",
     description:"Designed and developed a responsive e-commerce web application using React.js with Redux Toolkit for global state management Implemented product listing, category filtering, and cart functionality using centralized Redux store Managed application state efficiently across components using slices, actions, and reducers Integrated REST APIs to fetch and display dynamic product data Built reusable and modular React components to improve maintainability and scalability Optimized UI performance and ensured seamless responsiveness across mobile and desktop devices Followed clean code practices and component-based architecture for better user experience.",
     tech: ["React.js", "Tailwindcss", "Redux", "REST API"],
