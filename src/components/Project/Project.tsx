@@ -19,7 +19,7 @@ const projects = [
   {
     title: "StockSense – Smart Inventory & Stock Alert System ",
     description:
-      "StockSense is a warehouse inventory management dashboard built for tracking products, monitoring stock levels, and alerting when stock falls below defined thresholds. It simulates a real-world inventory system with role-based access, real-time updates, and offline support — all running entirely on the frontend with mocked API responses.",
+      "The Smart Inventory Dashboard is a modern web-based application designed to help businesses efficiently manage and monitor product stock levels. It provides a centralized interface where users can view product listings, track available quantities, and identify low-stock items that require immediate attention. The dashboard is structured to enhance usability with features such as search, filtering, sorting, and real-time updates, enabling faster decision-making in warehouse or retail environments. With a clean and responsive user interface, the application supports smooth navigation across devices and ensures that inventory data remains organized, accessible, and actionable. It is ideal for streamlining stock management processes while improving operational visibility and control.",
     tech: ["React.js","React Router v6",  "Redux Toolkit" , "Tailwindcss", ],
     github: "https://github.com/ezhilkrish002/Inventory",
     live: "https://smart-inventory-dashboard-ten.vercel.app/",
